@@ -1,9 +1,10 @@
 # Kerberos-project
 
 ## What is Kerberos 
-Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography.
+Kerberos is a computer-network authentication protocol that works on the basis of tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. Its designers aimed it primarily at a client–server model, and it provides mutual authentication—both the user and the server verify each other's identity. Kerberos protocol messages are protected against eavesdropping and replay attacks.
 
--- Reference (https://web.mit.edu/kerberos/)
+-- Wikipedia
+
 ## Kerberos Architecture 
 
 <img src="https://github.com/rihemebh/Kerberos-project/blob/main/architecture.png" />
