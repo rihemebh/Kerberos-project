@@ -139,10 +139,10 @@ ktadd host/server.insat.tn
  
  In order to test the endpoint you need to follow these steps: 
  
- - Generate a ticket : ``kinit``
- - Get the List of tickets with some details about them like expiration date : ``klist`` 
- - Change the diffrent domain names in files  "rquestHandler" and "index" with your subdomains 
- - Execute the requestHandler.py file : its role is to generate a negotiate token and add the header to the url
+ - Generate a ticket : ``kinit``.
+ - Get the List of tickets with some details about them like expiration date : ``klist``.
+ - Change the diffrent domain names in files  "requestHandler" and "index" with your ones.
+ - Execute the requestHandler.py file : its role is to generate a negotiate token and add the header to the url.
 
 
 ### References : 
