@@ -91,10 +91,12 @@ ntpdate -dv 192.168.56.110
 apt install krb5-kdc krb5-admin-server krb5-config 
 ```
 When it's prompted : 
-  - realm : INSAT.TN
-  - kerberos server : kdc.insat.tn
-  - Administrative Service:	kdc.insat.tn
-- create the realm: A Kerberos realm is the domain over which a Kerberos authentication server has the authority to authenticate a user, host or service.
+   -> realm : INSAT.TN
+   -> kerberos server : kdc.insat.tn
+   -> Administrative Service:	kdc.insat.tn
+
+
+- Create the realm: A Kerberos realm is the domain over which a Kerberos authentication server has the authority to authenticate a user, host or service.
 ```
 krb5_newrealm
 ```
@@ -126,25 +128,25 @@ ktadd host/server.insat.tn
 - Install Flask and Flask-Kerberos with pip 
 
 
- ### Now your machines are ready to use with the flask service 
+ ### =>  Now your machines are ready to use with the flask service 
  
 #### What is next ?
  Since Kerberos is based on ticket granting and not passwords so we need first to grant a ticket for the user to access the service 
  
- We have 2 types of tickets : 
- TGT: ticket granting ticket, the ticket that will allow you to get tickets for services 
- TGS: ticket granting service, allow you to access a service secured by kerberos
- 
-- About Flask Kerberos: check this link (https://flask-kerberos.readthedocs.io/en/latest/)
+ We have 2 types of tickets : <br/>
+ - TGT (ticket granting ticket) : the ticket that will allow you to get tickets for services 
+-  TGS (ticket granting service) allow you to access a service secured by kerberos
  
  In order to test the endpoint you need to follow these steps: 
  
  - Generate a ticket : ``kinit``
  - List of ticket with some other details about it like expiration date : ``klist``  
- 
- - Now, all you have to do is executing the requestHandler.py file, its role is to generate a negotiate token and add the header to the url
+ - Execute the requestHandler.py file : its role is to generate a negotiate token and add the header to the url
+
+
 ### References : 
 
 - [https://ubuntu.com/server/docs/service-kerberos](https://ubuntu.com/server/docs/service-kerberos)
 - [https://web.mit.edu/kerberos/krb5-1.12/doc/admin/admin_commands/kadmin_local.html](https://web.mit.edu/kerberos/krb51.12/doc/admin/admin_commands/kadmin_local.html)
 - https://github.com/hamza-mahjoub/flask-kerberos-module
+- https://flask-kerberos.readthedocs.io/en/latest/
