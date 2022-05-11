@@ -12,7 +12,7 @@ Kerberos is a computer-network authentication protocol that works on the basis o
 
 ## What we will do ? 
 
-You will find in this repo a flask endpoint that needs kerberos authentication 
+You will find in this repo a flask endpoint that needs kerberos authentication. <br/>
 In order to test it you need to configure 3 machines : KDC, Client and Server then generate token from the ticket produced by the KDC and everything will work properly 
 
 ### Prerequisite
