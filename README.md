@@ -7,6 +7,8 @@ Kerberos is a network authentication protocol. It is designed to provide strong 
 ## Kerberos Architecture 
 
 <img src="https://github.com/rihemebh/Kerberos-project/blob/main/architecture.png" />
+
+
 ## What we will do ? 
 
 You will find in this repo a flask end point that needs kerberos authentication 
