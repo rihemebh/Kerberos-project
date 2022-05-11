@@ -143,7 +143,7 @@ pip install flask_kerberos
 ```
 
 
- ### =>  Now your machines are ready to use with the flask service 
+ ### =>  Now your machines are ready to use the flask service 
  
 #### What is next ?
  Since Kerberos is based on ticket granting and not passwords so we need first to grant a ticket for the user to access the service 
