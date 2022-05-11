@@ -49,7 +49,7 @@ We will use ``insat.tn`` as domain name
 172.21.0.3      server.insat.tn server
 ``` 
 
-To test if everything is working properly try the command of each sub-domain: 
+To test if everything is working properly try this command on each sub-domain: 
 ```
 host kdc.insat.tn
 ```
