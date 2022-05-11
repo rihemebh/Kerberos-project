@@ -142,6 +142,7 @@ ktadd host/server.insat.tn
  - Generate a ticket : ``kinit``.
  - Get the List of tickets with some details about them like expiration date : ``klist``.
  - Change the diffrent domain names in files  "requestHandler" and "index" with your ones.
+ - Run the server ``./index.py``
  - Execute the requestHandler.py file : its role is to generate a negotiate token and add the header to the url.
 
 
