@@ -125,7 +125,22 @@ kadmin
 addprinc -randkey host/server.insat.tn     
 ktadd host/server.insat.tn  
 ```
-- Install Flask and Flask-Kerberos with pip 
+- Install Flask and Flask-Kerberos with pip <br/>
+```cmd
+pip install flask
+```
+If you are using a docker image you should run those commands before installing flask kerberos: 
+```cmd
+apt-get install libkrb5-dev
+apt-get install krb5-config
+apt-get install libkrb5-dev
+apt-get install libsasl2-dev
+apt-get install libsasl2-modules-gssapi-mit
+pip install requests_kerberos
+
+pip install flask_kerberos
+
+```
 
 
  ### =>  Now your machines are ready to use with the flask service 
