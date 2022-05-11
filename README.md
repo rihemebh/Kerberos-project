@@ -29,7 +29,7 @@ We need to configure 3 different machines :
   
   --Note: in the rest of this document I will only use 2 machines one for the KDC and the other will work as server and client
 1. Pull docker image  : ``docker pull ubuntu``
-2. Create network bridge to create a private netwok between containers so they can communicate with each others  : ``docker network create --driver=bridge``
+2. Create network bridge to create a private netwok between containers so they can communicate with each others  : ``docker network create --driver=bridge <network name>``
 3. Create 3 containers from that image
 
 Since the image doesn’t have any preinstalled dependencies you should first run : 
