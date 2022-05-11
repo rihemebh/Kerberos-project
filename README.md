@@ -13,32 +13,29 @@ Kerberos is a computer-network authentication protocol that works on the basis o
 ## What we will do ? 
 
 You will find in this repo a flask endpoint that needs kerberos authentication. <br/>
-In order to test it you need to configure 3 machines : KDC, Client and Server then generate token from the ticket produced by the KDC and everything will work properly 
+In order to test it you need to configure 3 machines : KDC, Client and Server then generate a token from the ticket produced by the KDC and everything will work properly 
 
+  --Note: in the rest of this document I will only use 2 machines one for the KDC and the other will work as server and client
+  
 ### Prerequisite
-
 - Docker 
 - Ubuntu image 
 - Python3 
 - Flask and Flask-Kerberos
 
-We need to configure 3 different machines : 
-  - KDC
-  - Server 
-  - Client 
-  
-  --Note: in the rest of this document I will only use 2 machines one for the KDC and the other will work as server and client
+## How it works?
+
 1. Pull docker image  : ``docker pull ubuntu``
 2. Create network bridge to create a private netwok between containers so they can communicate with each others  : ``docker network create --driver=bridge <network name>``
-3. Create 3 containers from that image
+3. Create 2 containers from that image
 
-Since the image doesn’t have any preinstalled dependencies you should first run : 
+Since the image doesn’t have any pre-installed dependencies you should first run : 
 
 ```cmd
 apt update && apt upgrade 
 ```
 
-then install whatever you need (for our case we will need: nano,  host, ntp, ntpdate, python3 python3-pip )
+then install whatever you need (in our case we'll need: nano,  host, ntp, ntpdate, python3, python3-pip )
 
 ### Machines' Setup:
 
